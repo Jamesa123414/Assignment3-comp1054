@@ -1,0 +1,246 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Delius', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header and Navigation Styles */
+header {
+    background: linear-gradient(to right, #764D26, #D69E2E);
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Hero Section Styles */
+#hero {
+    padding: 50px 0;
+    background: #764D26;
+    background-size: cover;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+/* Main Content Area */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* History Section */
+#history {
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.history-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.history-image:hover {
+    transform: scale(1.05);
+}
+
+/* Nutritional Facts Section */
+#nutrition {
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nutrition-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.nutrition-image:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.footer-content img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+/* Contact Form Styles */
+form {
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+form input,
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #D69E2E;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #B5862C;
+}
+
+/* Social Media Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    .history-image,
+    .nutrition-image {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #history, #nutrition {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-content img {
+        max-width: 150px;
+    }
+
+    form input, form textarea, form button {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+    }
+
+    /* Adjusting the Hero Section for mobile */
+    #hero {
+        padding: 30px 10px;
+    }
+
+    .hero-image {
+        width: 100%; /* Ensures image scales down on smaller screens */
+    }
+
+    /* Adjusting navigation items for smaller screens */
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 5px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+}
+
